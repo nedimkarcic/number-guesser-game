@@ -1,0 +1,20 @@
+body {
+	background-color: #737C9E;
+}
+
+.numbers-image {
+	position: relative;
+	margin: auto;
+    width: 45%;
+    top: 150px;
+}
+
+
+
+h1 {
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+	color: white;
+	font-size: 50px;
+	margin: auto;
+}
