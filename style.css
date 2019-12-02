@@ -1,13 +1,21 @@
 body {
-	background-color: #737C9E;
+	background-color: #2DAAE1;
+}
+
+html, body {
+	height: 100%;
+
 }
 
 .numbers-image {
-	position: relative;
-	margin: auto;
-    width: 45%;
-    top: 150px;
+	width: 100%; 
+	text-align: center; 
 } 
+
+img {
+	width: 500px;
+	margin-top: 5%;
+}
 
 
 
@@ -16,5 +24,30 @@ h1 {
 	font-family: 'Dancing Script', cursive;
 	color: white;
 	font-size: 50px;
+	/*margin: auto;*/
+}
+
+h3, p {
+	text-align: center;
+	color: white;
+	font-family: 'Josefin Slab', serif;
+}
+
+p {
+	font-size: 20px;
+}
+
+.input-group {
+	width: 30%;
+	margin: auto;
+}
+
+.btn {
+	background-color: red;
+	color: white;
+	border: none;
+}
+
+#playAgainButton {
 	margin: auto;
 }
