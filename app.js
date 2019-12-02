@@ -34,7 +34,7 @@ function equalCheck(e) {
 	userInput.value = '';
 	guessCounter++;
 
-};
+}; 
 
 function equalCheckOnEnter(e){
 	if(e.keyCode === 13){
