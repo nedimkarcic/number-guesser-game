@@ -13,25 +13,15 @@ function equalCheck(e) {
 
 	if (guessCounter === 1 && parseInt(userInput.value) === randomNumber) {
 			congrats();
-	};
-
-	if (guessCounter === 1 && parseInt(userInput.value) !== randomNumber) {
+	} else if (guessCounter === 1 && parseInt(userInput.value) !== randomNumber) {
 		message.textContent = 'You have 2 guesses left!';
-	};
-
-	if (guessCounter === 2 && parseInt(userInput.value) === randomNumber) {
+	} else if (guessCounter === 2 && parseInt(userInput.value) === randomNumber) {
 			congrats();
-	};
-
-	if (guessCounter === 2 && parseInt(userInput.value) !== randomNumber) {
+	} else if (guessCounter === 2 && parseInt(userInput.value) !== randomNumber) {
 		message.textContent = 'You have 1 guess left!';
-	};
-
-	if (guessCounter === 3 && parseInt(userInput.value) === randomNumber) {
+	} else if (guessCounter === 3 && parseInt(userInput.value) === randomNumber) {
 			congrats();
-	};
-
-	if (guessCounter === 3 && parseInt(userInput.value) !== randomNumber) {
+	} else {
 		message.textContent = 'Game Over!';
 		userInput.disabled = true;
 		submitButton.disabled = true;
