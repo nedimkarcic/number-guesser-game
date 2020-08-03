@@ -110,7 +110,7 @@ function returnId(event) {
   
   // Get the corresponding word out of the array and return it
   console.log(wordMappings[text]);
-}
+};
 
 
 submitButton.addEventListener('click', equalCheck);
