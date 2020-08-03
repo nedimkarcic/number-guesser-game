@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -15,7 +16,7 @@
 
 	<br>
 	<h1>Number Guesser</h1><br>
-	<h3>Your task is to guess a number between 0 and 38. Can you do it?</h3><br>
+	<h3>Your task is to guess a number between 0 and 38.<br> Can you do it?</h3><br>
 
 	<div>
 		<p id="hint1"></p>
@@ -24,7 +25,7 @@
 	<div class="input-group mb-3">
   			<input type="number" class="form-control" placeholder="Enter your guess" aria-label="Enter your guess" aria-describedby="basic-addon2" id="userInput">
   			<div class="input-group-append">
-    			<button class="btn btn-outline-secondary" type="button" id="button">Submit</button>
+    			<button class="btn btn-outline-secondary" type="button" id="button">This one</button>
   			</div>
 	</div>
 
@@ -43,8 +44,20 @@
     		<button class="btn btn-outline-secondary" type="button" id="playAgainButton">Play Again</button> 
   	 </div>
 
-	<div class="numbers-image"> 
-		<img src="numbers-2.png">
+
+	<div class="container animate__animated animate__headShake"> 
+
+		<button class="number-box" id="zero">0</button>
+		<button class="number-box" id="one">1</button>
+		<button class="number-box" id="two">2</button>
+		<button class="number-box" id="three">3</button>
+		<button class="number-box" id="four">4</button>
+		<button class="number-box" id="five">5</button>
+		<button class="number-box" id="six">6</button>
+		<button class="number-box" id="seven">7</button>
+		<button class="number-box" id="eight">8</button>
+		<button class="number-box" id="nine">9</button>
+
 	</div>
 
 	<script src="app.js"></script>

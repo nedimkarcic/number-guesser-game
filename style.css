@@ -4,20 +4,7 @@ body {
 
 html, body {
 	height: 100%;
-
 }
-
-.numbers-image {
-	width: 100%; 
-	text-align: center; 
-} 
-
-img {
-	width: 500px;
-	margin-top: 2%;
-}
-
-
 
 h1 {
 	text-align: center;
@@ -39,7 +26,7 @@ p {
 
 
 .input-group {
-	width: 30%;
+	max-width: 40vh;
 	margin: auto;
 }
 
@@ -51,4 +38,20 @@ p {
 
 #playAgainButton {
 	margin: auto; 
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	width: 50vh;
+	margin-top: 30px;
+}
+
+.number-box {
+	font-size: 30px;
+	width:90%;
+	font-family: 'Josefin Slab', serif;
+	border:none;
+	border-radius: 20px;
+	margin: 5px;
 }

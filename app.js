@@ -1,4 +1,4 @@
-const userInput = document.querySelector('#userInput');
+let userInput = document.querySelector("input");
 let randomNumber = Math.floor(Math.random() * 39); 
 const submitButton = document.querySelector('#button');
 const hint1 = document.querySelector('#hint1');
@@ -6,7 +6,8 @@ const hint2 = document.querySelector('#hint2');
 const message = document.querySelector('#message');
 const playAgainButton = document.querySelector('#playAgainButton');
 let guessCounter = 1;
-
+const zero = document.querySelector('#zero');
+const one = document.querySelector('#one');
 
 function equalCheck(e) {
 
@@ -87,8 +88,29 @@ function playAgain(){
 	randomNumber = Math.floor(Math.random() * 39);
 	hint1.textContent = '';
 	hint2.textContent = '';
+	userInput.value = '';
 
 };
+
+// Just set an event listener on the parent of all the buttons
+// and let any click event that originates from a button bubble
+// up to the parent where it will be handled. This is called 
+// event delegation and you'll set up one event handler instead
+// of 10 and you won't need any loop.
+document.querySelector("div.container").addEventListener("click", returnId);
+
+let wordMappings = ["zero","one","two","three","four","five","six","seven","eight","nine"];
+
+function returnId(event) {
+  // Get the text of the clicked button
+  let text = event.target.textContent;
+  
+  // Convert the text to a number and update the value
+  userInput.value += +text;
+  
+  // Get the corresponding word out of the array and return it
+  console.log(wordMappings[text]);
+}
 
 
 submitButton.addEventListener('click', equalCheck);
