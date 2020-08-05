@@ -6,8 +6,6 @@ const hint2 = document.querySelector('#hint2');
 const message = document.querySelector('#message');
 const playAgainButton = document.querySelector('#playAgainButton');
 let guessCounter = 1;
-const zero = document.querySelector('#zero');
-const one = document.querySelector('#one');
 
 function equalCheck(e) {
 
@@ -47,7 +45,9 @@ function hints() {
 		hint2.textContent = 'Try with the higher one!'
 	};
 
-	if(isNaN(parseInt(userInput.value)) || parseInt(userInput.value) < 0 || parseInt(userInput.value) > 38){
+	if(isNaN(parseInt(userInput.value)) || 
+		parseInt(userInput.value) < 0 || 
+		parseInt(userInput.value) > 38) {
     	hint2.textContent = 'Please enter a number between 0 and 38!';
   	};
 
