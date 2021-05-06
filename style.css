@@ -26,7 +26,7 @@ p {
 
 
 .input-group {
-	max-width: 40vh;
+	max-width: 60vh;
 	margin: auto;
 }
 
@@ -43,8 +43,13 @@ p {
 .container {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	width: 50vh;
+	width: 60vh;
 	margin-top: 30px;
+}
+
+.container-2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
  
 .number-box {
